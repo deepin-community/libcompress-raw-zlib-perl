@@ -3,7 +3,7 @@ Origin: vendor
 Forwarded: not-needed
 Author: Damyan Ivanov
 Reviewed-by: gregor herrmann <gregoa@debian.org>
-Last-Update: 2011-05-08
+Last-Update: 2022-06-26
 
 --- a/config.in
 +++ b/config.in
@@ -19,4 +19,4 @@ Last-Update: 2011-05-08
 +LIB             = /usr/lib
  OLD_ZLIB        = False
  GZIP_OS_CODE    = AUTO_DETECT
- 
+ USE_ZLIB_NG     = False

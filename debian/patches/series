@@ -1,1 +1,2 @@
 use-debian-zlib.patch
+tests-version-skew.patch
