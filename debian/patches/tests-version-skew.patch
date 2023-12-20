@@ -1,0 +1,38 @@
+Description: avoid version skew issue in t/02zlib.t
+ Choose expected behaviour based on runtime zlib version instead of build
+ time one.
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/1024179
+Forwarded: not-needed
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2022-11-17
+
+--- a/t/02zlib.t
++++ b/t/02zlib.t
+@@ -12,7 +12,7 @@
+ 
+ use Test::More  ;
+ 
+-use constant ZLIB_1_2_12_0 => 0x12C0;
++use constant ZLIB_1_2_12_0 => '1.2.12';
+ 
+ BEGIN
+ {
+@@ -489,7 +489,7 @@
+ 
+     # Z_STREAM_END returned by 1.12.2, Z_DATA_ERROR for older zlib
+     # ZLIB_NG has the fix for all versions
+-    if (ZLIB_VERNUM >= ZLIB_1_2_12_0 ||  Compress::Raw::Zlib::is_zlibng)
++    if ($Zlib_ver gt ZLIB_1_2_12_0 ||  Compress::Raw::Zlib::is_zlibng)
+     {
+         cmp_ok $status, '==', Z_STREAM_END ;
+     }
+@@ -523,7 +523,7 @@
+     $GOT = '';
+     $status = $k->inflate($rest, $GOT);
+     # Z_STREAM_END returned by 1.12.2, Z_DATA_ERROR for older zlib
+-    if (ZLIB_VERNUM >= ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
++    if ($Zlib_ver gt ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
+     {
+         cmp_ok $status, '==', Z_STREAM_END ;
+     }

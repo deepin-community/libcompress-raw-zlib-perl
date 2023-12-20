@@ -1,3 +1,54 @@
+libcompress-raw-zlib-perl (2.206-1) unstable; urgency=medium
+
+  * Import upstream version 2.206.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 29 Jul 2023 17:57:58 +0200
+
+libcompress-raw-zlib-perl (2.204-1) unstable; urgency=medium
+
+  * Import upstream version 2.204.
+  * Update years of upstream and packaging copyright.
+  * Make build dependency on zlib1g-dev versioned to match upstream's
+    bundled version.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2023 21:31:51 +0100
+
+libcompress-raw-zlib-perl (2.202-2) unstable; urgency=medium
+
+  * Add patch to fix test issue with different build time vs. runtime zlib
+    version. (Closes: #1024179)
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 30 Dec 2022 18:18:27 +0100
+
+libcompress-raw-zlib-perl (2.202-1) unstable; urgency=medium
+
+  * Import upstream version 2.202.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 27 Jun 2022 21:37:12 +0200
+
+libcompress-raw-zlib-perl (2.201-1) unstable; urgency=medium
+
+  * Import upstream version 2.201.
+  * Refresh use-debian-zlib.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 26 Jun 2022 19:58:09 +0200
+
+libcompress-raw-zlib-perl (2.105-1) unstable; urgency=medium
+
+  * Import upstream version 2.105.
+  * Declare compliance with Debian Policy 4.6.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 16 May 2022 18:00:28 +0200
+
+libcompress-raw-zlib-perl (2.103-1) unstable; urgency=medium
+
+  * Import upstream version 2.103.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 05 Apr 2022 18:31:29 +0200
+
 libcompress-raw-zlib-perl (2.101-1) unstable; urgency=medium
 
   * Import upstream version 2.101.
