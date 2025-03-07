@@ -1,3 +1,45 @@
+libcompress-raw-zlib-perl (2.213-1) unstable; urgency=medium
+
+  * Import upstream version 2.213.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 31 Aug 2024 17:14:57 +0200
+
+libcompress-raw-zlib-perl (2.212-1) unstable; urgency=medium
+
+  * Import upstream version 2.212.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 27 Apr 2024 23:21:33 +0200
+
+libcompress-raw-zlib-perl (2.211-1) unstable; urgency=medium
+
+  * Import upstream version 2.211.
+  * Declare compliance with Debian Policy 4.7.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 07 Apr 2024 17:26:09 +0200
+
+libcompress-raw-zlib-perl (2.209-1) unstable; urgency=medium
+
+  * Import upstream version 2.209.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Mar 2024 01:22:05 +0100
+
+libcompress-raw-zlib-perl (2.208-2) unstable; urgency=medium
+
+  * Simplify tests-version-skew.patch.
+    Thanks to upstream author Paul Marques for the suggestion.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 22 Feb 2024 17:59:17 +0100
+
+libcompress-raw-zlib-perl (2.208-1) unstable; urgency=medium
+
+  * Import upstream version 2.208.
+  * Bump versioned build dependency on zlib1g-dev
+    to follow upstream's vendored version.
+  * Update years of upstream and packaging copyright.
+  * Refresh use-debian-zlib.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 19 Feb 2024 20:55:05 +0100
+
 libcompress-raw-zlib-perl (2.206-1) unstable; urgency=medium
 
   * Import upstream version 2.206.
