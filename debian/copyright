@@ -4,7 +4,7 @@ Upstream-Contact: Paul Marquess <pmqs@cpan.org>
 Upstream-Name: Compress-Raw-Zlib
 
 Files: *
-Copyright: 2005-2023, Paul Marquess <pmqs@cpan.org>
+Copyright: 2005-2024, Paul Marquess <pmqs@cpan.org>
 License: Artistic or GPL-1+
 
 Files: zlib-src/*
@@ -53,7 +53,7 @@ Files: debian/*
 Copyright:
  2007-2008, Damyan Ivanov <dmn@debian.org>
  2007, Krzysztof Krzyzaniak (eloy) <eloy@debian.org>
- 2007-2023, gregor herrmann <gregoa@debian.org>
+ 2007-2024, gregor herrmann <gregoa@debian.org>
  2008, Gunnar Wolf <gwolf@debian.org>
  2008, Roberto C. Sanchez <roberto@debian.org>
  2009, Jonathan Yu <jawnsy@cpan.org>

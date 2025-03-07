@@ -1,38 +1,34 @@
 Description: avoid version skew issue in t/02zlib.t
- Choose expected behaviour based on runtime zlib version instead of build
- time one.
+ Avoid version comparison between build time and runtime version, as they
+ might be different, and assume we always have >= 1.12.2 (true since
+ bookworm).
 Origin: vendor
 Bug-Debian: https://bugs.debian.org/1024179
 Forwarded: not-needed
 Author: gregor herrmann <gregoa@debian.org>
-Last-Update: 2022-11-17
+Last-Update: 2024-02-22
 
 --- a/t/02zlib.t
 +++ b/t/02zlib.t
-@@ -12,7 +12,7 @@
- 
- use Test::More  ;
- 
--use constant ZLIB_1_2_12_0 => 0x12C0;
-+use constant ZLIB_1_2_12_0 => '1.2.12';
- 
- BEGIN
- {
-@@ -489,7 +489,7 @@
+@@ -489,7 +489,9 @@
  
      # Z_STREAM_END returned by 1.12.2, Z_DATA_ERROR for older zlib
      # ZLIB_NG has the fix for all versions
 -    if (ZLIB_VERNUM >= ZLIB_1_2_12_0 ||  Compress::Raw::Zlib::is_zlibng)
-+    if ($Zlib_ver gt ZLIB_1_2_12_0 ||  Compress::Raw::Zlib::is_zlibng)
++    # Debian: 1) avoid version skew compile time version and runtime version,
++    # and 2) we have >= 1.12.2 since bookworm
++    if (1)
      {
          cmp_ok $status, '==', Z_STREAM_END ;
      }
-@@ -523,7 +523,7 @@
+@@ -523,7 +525,9 @@
      $GOT = '';
      $status = $k->inflate($rest, $GOT);
      # Z_STREAM_END returned by 1.12.2, Z_DATA_ERROR for older zlib
 -    if (ZLIB_VERNUM >= ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
-+    if ($Zlib_ver gt ZLIB_1_2_12_0 || Compress::Raw::Zlib::is_zlibng)
++    # Debian: 1) avoid version skew compile time version and runtime version,
++    # and 2) we have >= 1.12.2 since bookworm
++    if (1)
      {
          cmp_ok $status, '==', Z_STREAM_END ;
      }
