@@ -1,6 +1,155 @@
 CHANGES
 -------
 
+  2.222 27 February 2026
+
+    * Add SECURITY.md. Fixes #40
+      Sun Mar 8 12:02:45 2026 +0000
+      c637bc61cbc91eb9b7064491c4ea56b5ce810b30
+
+    * Fix spelling typos
+      Sun Mar 8 11:06:36 2026 +0000
+      26fdd596d867bbbfd35de32c8efe5267a9c52545
+
+  2.221 27 February 2026
+
+    * Merge remote-tracking branch 'refs/remotes/origin/master'
+      Fri Feb 27 12:57:24 2026 +0000
+      34f0318c9687924347284704c6f3b9b2566e07fd
+
+    * Merge pull request #39 from jkeenan/correct-changes-date-20260227
+      Fri Feb 27 12:50:53 2026 +0000
+      e879453ec96d85b2917ed903a3f03cf8264238f1
+
+    * Update to 2.221
+      Fri Feb 27 12:44:53 2026 +0000
+      17f707ed1986acf6773d91ebf6b5c7d6ba6d32be
+
+    * Version number wrong in Changes file. Fixes #38
+      Fri Feb 27 12:38:32 2026 +0000
+      2c10524538077d20779c483c667e2ead4c65a87a
+
+  2.220 27 February 2026
+
+    * Update to version 2.220
+      Wed Feb 25 13:50:23 2026 +0000
+      f9ac640e71a54ad2f8156a075127f8f99ad45586
+
+    * zlib 1.3.2: Update references to zlib 1.3.1 to use zlib 1.3.2
+      Wed Feb 25 13:45:59 2026 +0000
+      16b5fc92e830af8b10c37e6a3e66806cc0db937f
+
+    * zlib 1.3.2: Add "Perl_crz" prefix to "z_errmsg". Fixes #32
+      Wed Feb 25 13:41:07 2026 +0000
+      36b42f013ed5d3e6b27ce956c97b8ce5733cfe24
+
+    * Fix spelling typo
+      Tue Feb 24 19:46:13 2026 +0000
+      f73b8114faad246cf5c615c7e77e36d8978393bd
+
+  2.219 23 February 2026
+
+      * Update to version 2.219
+        Mon Feb 23 15:19:30 2026 +0000
+        c257a0b73e5f925549e20602cd42f9beea9db51e
+
+      * zlib 1.3.2:  Add a few casts to allow zlib sources to build with C++
+        Mon Feb 23 14:29:02 2026 +0000
+        0049fc058a9b9c1de250b00af38edf3e91cb15eb
+
+      * Test workflows with upstream zlib 1.32
+        Mon Feb 23 14:15:02 2026 +0000
+        d3b865abdb11c0479d04f8b66a6350b7aad9d5b3
+
+        * zlib 1.3.2: Add "Perl_crz_" prefix  to exported symbols
+        Mon Feb 23 14:02:50 2026 +0000
+        37cec4a39cc6080a29060944db89f90c614c1cd4
+
+      * zlib-1.3.2: Force include of <stddef.h> to get definition for NULL
+        Mon Feb 23 13:38:39 2026 +0000
+        8907f13c905eb3a9e65514bfbbf35304a92fa76a
+
+      * Refresh zlib-src directory with unmodified zlib-1.3.2 files
+        Mon Feb 23 13:31:42 2026 +0000
+        48a5180b706c1066af212656e32d73c74850c408
+
+  2.218 3 February 2026
+
+      * Update version to 2.218
+        Tue Feb 3 10:29:39 2026 +0000
+        ad08cfc854823793fb1fa4f6f5e2dda644f4c581
+
+      * Fix for regression of #34
+        Tue Feb 3 10:17:49 2026 +0000
+        4133174c92633fb7d8562f514746d08baf667ad3
+
+  2.217 31 January 2026
+
+      * Update version to 2.217
+        Sat Jan 31 11:52:15 2026 +0000
+        937b7c2da2052fa09483b7c5db3eca86e74fee52
+
+  2.214 28 October 2025
+
+      * version 2.214
+        Fri Oct 24 16:14:17 2025 +0100
+        8d4865a68fa3ed38627a9f11477b9b494aa84d5f
+
+      * remove 1.2.13 from mac upstream zlib build
+        Sun Sep 7 14:54:01 2025 +0100
+        2cd55f3ed1d37999fbdb52d6d16e31cb2ed6a4bb
+
+      * Disable some older zlib versions
+        Sun Sep 7 14:44:55 2025 +0100
+        faf8fb36de808ca74bc8e9074627851ebee79ef7
+
+      * Bump actions/checkout from 1 to 5
+        Sun Sep 7 14:36:39 2025 +0100
+        403e03af996851df6875d634ea98159138b6c843
+
+      * remove target-branch from dependabot
+        Sun Sep 7 11:50:10 2025 +0100
+
+      * Add dependabot.yml to police workflow files
+        Thu Sep 4 17:16:28 2025 +0100
+        9c497340afa0fc5727efc4d91cfbb603ee07e230
+
+      * disable push & pull_request
+        Thu Sep 4 17:15:47 2025 +0100
+        f2d9aa48d32f818c92a775fa51af7c851d2557a2
+
+      * disable push & pull_request
+        Thu Sep 4 17:14:47 2025 +0100
+        3db6fd5a8d102de5bf1125d2db552a3e5ed7c392
+
+      * Add perl 5.42 to workflow files
+        Thu Sep 4 17:06:15 2025 +0100
+        ca5b472df99022182dc5b3bf80d3bc04ddb3e56b
+
+      * Add support for zlib-ng 2.2.5
+        Thu Sep 4 17:05:26 2025 +0100
+        8034efa99464af12588d2942d1d69979bfc850e5
+
+      * get_Bufsize is correct, but the document says get_BufSize - Fixes #34
+        Sat Aug 30 19:15:20 2025 +0100
+        747f25842cc78a544973eff115d0e17145bf3812
+
+      * add zlib-ng 2.2.4 to workflow
+        Tue Feb 11 11:07:18 2025 +0000
+        d8a2e7581baa11dcc5ad8c71b6252f553478e4d0
+
+      * add zlib-ng 2.2.3
+        Wed Jan 1 13:24:05 2025 +0000
+        3ade504992471025b61ab024db57dfabd953df48
+
+      * More updates for zlib-ng 2.2.2 & 2.1.8
+        Tue Sep 17 15:02:20 2024 +0100
+        169e6a371e8f9f0be34561fb2121bed1a14980bd
+
+      * Add zlib-ng 2.2.2 and 2.18 to GitHub workflows
+        Tue Sep 17 14:52:23 2024 +0100
+        83be37e0a911eb374ea18737c4fa77550d501354
+
   2.213 28 August 2024
 
       * version 2.213

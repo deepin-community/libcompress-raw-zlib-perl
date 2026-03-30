@@ -1,3 +1,35 @@
+libcompress-raw-zlib-perl (2.222-1) unstable; urgency=medium
+
+  * Import upstream version 2.222.
+  * Install new SECURITY.md document.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 09 Mar 2026 19:17:57 +0100
+
+libcompress-raw-zlib-perl (2.221-1) unstable; urgency=medium
+
+  * Import upstream version 2.221.
+  * Update years of upstream copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 28 Feb 2026 22:51:52 +0100
+
+libcompress-raw-zlib-perl (2.218-1) unstable; urgency=medium
+
+  * Import upstream version 2.218.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.7.3.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 Feb 2026 22:51:38 +0100
+
+libcompress-raw-zlib-perl (2.214-1) unstable; urgency=medium
+
+  * Import upstream version 2.214.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.7.2.
+  * Remove «Rules-Requires-Root: no», which is the current default.
+  * Remove «Priority: optional», which is the current default.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 26 Oct 2025 18:34:42 +0100
+
 libcompress-raw-zlib-perl (2.213-1) unstable; urgency=medium
 
   * Import upstream version 2.213.
